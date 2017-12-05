@@ -14,5 +14,6 @@ fs.appendFile('greetings.txt', `Hello ${user.username}`, function(err) {
 	}
 });
 */
-let result = notes.addNote();
-console.log(result);
+
+let sum = notes.add(2, 4);
+console.log(sum);

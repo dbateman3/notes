@@ -1,0 +1,19 @@
+{
+  "name": "notes",
+  "version": "0.1.0",
+  "description": "note taking app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbateman3/notes.git"
+  },
+  "author": "Dan Bateman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dbateman3/notes/issues"
+  },
+  "homepage": "https://github.com/dbateman3/notes#readme"
+}
