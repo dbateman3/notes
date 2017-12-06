@@ -37,11 +37,17 @@ let addNote = function(title, body) {
 };
 
 let getAll = function() {
-	console.log(`Getting notes`);
+	let notes = fetchNotes();
+	return notes;
 };
 
 let getNote = function(title) {
-	console.log(`Getting ${title} note`);
+	let notes = fetchNotes();
+	let note = notes.filter(function(note) {
+		return note.title === title;
+	});
+	return note[0];
+
 };
 
 let removeNote = function(title) {

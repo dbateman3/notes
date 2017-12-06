@@ -23,9 +23,22 @@ if (command === 'add') {
 		console.log(`Error! Title ${argv.title} already exists!`);
 	}
 } else if (command === 'list') {
-	notes.getAll();
+	let allNotes = notes.getAll();
+	allNotes.forEach(function(note) {
+		console.log(`Title: ${note.title}`);
+		console.log(`Body: ${note.body}`);
+		console.log('__')
+	})
 } else if (command === 'read') {
-	notes.getNote(argv.title);
+	let note = notes.getNote(argv.title);
+	if (note) {
+		console.log('Note found!');
+		console.log('__');
+		console.log(`Title: ${note.title}`);
+		console.log(`Body: ${note.body}`);
+	} else {
+		console.log('Note not found');
+	}
 } else if (command === 'remove') {
 	let noteRemoved = notes.removeNote(argv.title);
 	let message = noteRemoved ? 'Note was removed' : 'Note doesnt exist';
