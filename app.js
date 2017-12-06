@@ -8,7 +8,7 @@ const _ = require('lodash');
 const yargs = require('yargs');
 //Collect arguments from console
 const argv = yargs.argv;
-let command = process.argv[2];
+let command = argv._[0];
 console.log(`Command: ${command}`);
 console.log('Yarg', argv);
 
