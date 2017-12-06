@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/dbateman3/notes/issues"
   },
-  "homepage": "https://github.com/dbateman3/notes#readme"
+  "homepage": "https://github.com/dbateman3/notes#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "yargs": "^10.0.3"
+  }
 }
